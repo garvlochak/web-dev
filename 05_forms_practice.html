@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <div>
+        <h1>Login form</h1>
+        <form>
+            <label for="email">Email:
+                <input placeholder="Enter your email" type="email" name="Email" id="email">
+            </label>
+            <label for="password">Password:
+                <input placeholder="Enter your password" type="password" name="Password" id="password">
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div>
+        <h1>Sign-up form</h1>
+        <form>
+            <label for="Sign-up name">Full name:
+                <input placeholder="Enter your full name" required type="text" name="Full name" id="Sign-up name">
+            </label>
+             <label for="Sign-up email">Email:
+                <input placeholder="Enter your email" required type="email" name="Email" id="Sign-up email">
+            </label>
+            <label for="Sign-up password">Password:
+                <input placeholder="Enter your password" required type="password" name="Password" id="Sign-up password">
+            </label>
+            <label for="sign-up confirm-password">Confirm-password:
+                <input placeholder="Confirm your password" required type="password" name="Password" id="sign-up confirm-password">
+            </label>
+            <label for="date">Date:
+                <input type="date" name="Date" id="date">
+            </label>
+            <fieldset>
+                <legend>Gender:</legend>
+                <div>
+                    <label for="male">Male
+                        <input type="radio" name="Gender" id="male">
+                    </label>
+                </div>
+                <div>
+                    <label for="female">Female
+                        <input type="radio" name="Gender" id="female">
+                    </label>
+                </div>   
+                
+                <div>
+                    <label for="others">Others
+                        <input type="radio" name="Gender" id="others">
+                    </label>
+                </div>
+            </fieldset>
+            <label for="checkbox">I agree to the terms (required)
+                <input type="checkbox" id="checkbox" required>
+            </label>
+            <div>
+            <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div>
+        <h1>Feedback form</h1>
+        <form>
+            <label for="feedback form name">Name:
+                <input type="text" name="name" >
+            </label>
+            <label for="feedback form email">Email:
+                <input type="email" name="Email" id="feedback form email">
+            </label>
+           <label for="topic">Topic
+            <select name="Topic" id="topic">
+                <option value="bug">Bug</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="others">Others</option>
+            </select>
+           </label>
+           <label for="message">Message:
+            <textarea rows="2" cols="10" name="Message" id="message"></textarea>
+           </label>
+
+           <label for="feedback-form checkbox">Send me a copy
+            <input type="checkbox" name="checkbox" id="feedback-form checkbox">
+           </label>
+           <div>
+           <button type="submit">Submit</button>
+           </div>
+
+        </form>
+    </div>
+
+
+    <div>
+        <h1>Job application form</h1>
+        <form>
+             <label for="job application name">Full name:
+                <input placeholder="Enter your full name" type="text" name="Full name" id="job application name">
+            </label>
+            <label for="job application email">Email:
+                <input placeholder="Enter your email" type="email" name="Email" id="job application email">
+            </label>
+            <label for="phone">Phone
+                <input type="tel" name="Phone" id="phone">
+            </label>
+            <label for="Role">Role
+                <select name="Role" id="Role">
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="Full Stack">Full Stack</option>
+                </select>
+            </label>
+            <fieldset>
+                <legend>Work Mode:</legend>
+                <div>
+                    <label for="Remote">Remote
+                        <input type="radio" name="Work Mode" id="Remote">
+                    </label>
+                </div>
+                <div>
+                    <label for="Hybrid">Hybrid
+                        <input type="radio" name="Work Mode" id="Hybrid">
+                    </label>
+                </div>
+                <div>
+                    <label for="On-site">On-site
+                        <input type="radio" name="Work Mode" id="On-site">
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills:</legend>
+                <label for="skill-html">HTML
+                <input type="checkbox" name="skills" id="skill-html" value="html">
+                </label>
+                <label for="skill-css">CSS
+                <input type="checkbox" name="skills" id="skill-css" value="css">
+                </label>
+                <label for="skill-js">JavaScript
+                <input type="checkbox" name="skills" id="skill-js" value="javascript">
+                 </label>
+            </fieldset>
+            <label for="Preferred start month">Preferred start month
+                <input type="month">
+            </label>
+            <label for="Resume upload">Resume upload
+                <input type="file" name="" id="">
+            </label>
+
+            <label for="A cover letter">A cover letter
+                <textarea name="cover letter" id="A cover letter"></textarea>
+            </label>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    
+
+</body>
+</html>
