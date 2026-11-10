@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <h1>Feedback form</h1>
+    <form>
+        
+        <label for="user-name">Name
+            <input placeholder="Write your name" type="text" name="user-name" id="user-name" required>
+        </label>
+        
+        <label for="user-email">Email
+            <input placeholder="Write your Email" type="email" name="user-email" id="user-email" required>
+        </label>
+        
+        <label for="user-password">Password
+            <input placeholder="Write your password" type="password" name="user-password" id="user-password">
+        </label>
+        <fieldset>
+            <legend>
+                Experience
+            </legend>
+            <div>
+            <label for="exp-bad">Bad
+                <input type="radio" name="experience" id="exp-bad" value="Bad">
+            </label>
+            </div>
+            <div>
+                <label for="exp-okay">Okay 
+                    <input type="radio" name="experience" id="exp-okay" value="Okay">
+                </label>
+            </div>
+
+            <div>
+                <label for="exp-good">Good 
+                    <input type="radio" name="experience" id="exp-good" value="Good">
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Liked</legend>
+            <label for="liked-design">Design
+                <input type="checkbox" name="liked" id="liked-design" value="Design">
+            </label>
+            <label for="liked-speed">Speed 
+                <input type="checkbox" name="liked" id="liked-speed" value="Speed">
+            </label>
+            <label for="liked-content">Content 
+                <input type="checkbox" name="liked" id="liked-content" value="Content">
+            </label>
+        </fieldset>
+        <label for="feedback-topic">Topic</label>
+        <select name="topic" id="feedback-topic">
+            <option value="Bug">Bug</option>
+            <option value="Idea">Idea</option>
+            <option value="Other">Other</option>
+        </select>
+    <div>
+    <label for="feedback-message">Message</label>
+    <textarea name="feedback-message" id="feedback-message" rows="5" cols="10" ></textarea>
+    </div>
+    <div>
+    <button type="submit">Submit</button>
+    </div>
+    </form>
+</body>
+</html>
